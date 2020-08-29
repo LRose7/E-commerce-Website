@@ -1,35 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <!-- RESPONSIVE -->
-        <meta name="viewport" content="width=device-width, intial-scale=1.0" />
-        <title>E-commerce Website</title>
 
-        <!-- FONT AWESOME -->
-        <script src="https://kit.fontawesome.com/6e2327f7f9.js"
-            crossorigin="anonymous"></script>
+<head>
+    <meta charset="UTF-8" />
+    <!-- RESPONSIVE -->
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <title>E-commerce Website</title>
 
-        <!-- CUSTOM CSS -->
-        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    </head>
-    <body>
-        <!-- NAVBAR -->
-        <nav class="navbar">
-            <div class="navbar-center">
-                <span class="nav-icon">
-                    <i class="fas fa-bars"></i>
-                </span>
-                <img src="#" alt="store logo" />
-                <div class="cart-btn">
-                    <span class="nav-icon">
-                        <i class="fas fa-shopping-cart"></i>
-                    </span>
-                    <div class="cart-items">0</div>
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/6e2327f7f9.js" crossorigin="anonymous"></script>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="grid-container">
+        <header class="header">
+            <nav class="navbar">
+                <div class="navbar-center">
+                    <!-- CODE FOR HAMBURGER BUTTON-->
+                    <div>
+                        <button class="sidebar-toggle" aria-label="toggle sidebar">
+                            <span class="hamburger"></span>
+                        </button>
+                    </div>
+                    <!-- <span class="nav-icon">
+                    <a onclick="openMenu()" style="color: black;"><i class="fas fa-bars"></i></a>
+                </span> -->
+                    <!-- <h1>TO BE ANNOUNCED</h1> -->
+                    <div class="signin">
+                        <a href="#">Sign In</a>
+                    </div>
+                    <div class="cart-btn">
+                        <span class="nav-icon">
+                            <a href="#" style="color: black;"><i class="fas fa-shopping-cart"></i></a>
+                        </span>
+                        <div class="cart-items">0</div>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
         <!-- END OF NAVBAR -->
 
-    </body>
+        <!-- SIDE BAR -->
+        <aside class="sidebar">
+            
+            <div class="sidebarclose-btn">
+                <button class="sidebar-close-btn" onclick="closeMenu()">x</button>
+            </div>
+            <h3>Shopping Categories</h3>
+            <ul class="sidebar-list">
+                <li>
+                    <a href="#" class="sidebar-link">Accessories</a>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-link">Clothing</a>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-link">Handbags</a>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-link">Jewelry</a>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-link">Ponchos</a>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-link">Scarves</a>
+                </li>
+
+            </ul>
+        </aside>
+        <main class="main">
+            <ul>
+                <li>Product 1</li>
+                <li>Product 2</li>
+                <li>Product 3</li>
+                <li>Product 4</li>
+                <li>Product 5</li>
+            </ul>
+        </main>
+        <footer class="footer">
+            All rights reserved.
+        </footer>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+
 </html>
