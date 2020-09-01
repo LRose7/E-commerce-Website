@@ -10,7 +10,7 @@ body {
 .grid-container {
     display: grid;
     grid-template-areas:
-    "header"
+    "navbar"
     "main"
     "footer";
     grid-template-columns: 1fr;
@@ -19,8 +19,7 @@ body {
 }
 
 .header {
-    grid-area: header;
-    background: rgb(210, 212, 211);
+    
 }
 
 .main {
@@ -33,6 +32,31 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* --------- NAVBAR ----------- */
+.navbar {
+    grid-area: navbar;
+    position: sticky;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background: rgb(236, 202, 234);
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.navbar-center {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    cursor: pointer;
 }
 
 /* HAMBURGER */
@@ -56,7 +80,7 @@ body {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: orange;
+    background: rgb(255, 0, 170);
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -74,6 +98,44 @@ body {
 .hamburger::before { top: 6px; }
 .hamburger::after { bottom: 6px; }
 
+/* SHOPPING CART ICON SIZE */
+.nav-icon {
+    font-size: 1.5rem;
+}
+
+.cart-btn {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-items {
+   position: absolute;
+   top: -8px;
+   right: -8px;
+   background: rgb(235, 107, 196);
+   padding: 0 5px;
+   border-radius: 30%;
+   color: white;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo-img {
+    width: 60px;
+    height: auto;
+}
+
+.logo-title {
+    font-family: cursive;
+    color: purple;
+    font-size: 40px;
+    text-shadow: 2px 2px pink;
+
+}
+/*------------ END OF NAVBAR ------------ */
 
 /* SIDE BAR */
 
@@ -131,54 +193,6 @@ body {
 .sidebar-close .sidebar {
     transform: translateX(-30rem);
 }
-
- 
-/* --------- NAVBAR ----------- */
-.navbar {
-    position: sticky;
-    top: 0;
-    height: 60px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    z-index: 1;
-}
-
-.navbar-center {
-    width: 100%;
-    max-width: 1170px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1.5rem;
-    cursor: pointer;
-}
-
-.nav-icon {
-    font-size: 1.5rem;
-}
-
-.cart-btn {
-    position: relative;
-    cursor: pointer;
-}
-
-.cart-items {
-   position: absolute;
-   top: -8px;
-   right: -8px;
-   background: orange;
-   padding: 0 5px;
-   border-radius: 30%;
-   color: white;
-}
-
-.signin a {
-    text-decoration: none;
-    color: black;
-}
-/*------------ END OF NAVBAR ------------ */
 
 /*---------------- PRODUCTS ------------*/
 .products {
@@ -256,3 +270,50 @@ body {
     text-align: center;
 }
 /*----------- END OF PRODUCTS -----------*/
+
+/*------------- MEDIA QUERIES -------------*/
+
+
+/*----------- CELL PHONE ---------------*/
+@media(max-width: 600px) {
+
+    .navbar-center {
+        justify-content: space-around;
+    }
+
+    .logo-img {
+        width: 25px;
+        height: auto;
+    }
+    
+    .logo-title {
+        font-family: cursive;
+        color: purple;
+        font-size: 17px;
+        text-shadow: 2px 2px pink;
+    
+    }
+
+    .navbar-center {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .nav-icon {
+        font-size: 1.0rem;
+    }
+
+    .cart-items {
+        top: -8px;
+        right: -6px;
+        padding: 0 5px;
+        border-radius: 30%;
+     }
+
+     .hamburger,
+.hamburger::before,
+.hamburger::after {
+    width: 1.5em;
+}
+  
+}

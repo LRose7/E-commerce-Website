@@ -1,152 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <!-- RESPONSIVE -->
-    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
-    <title>E-commerce Website</title>
+    <head>
+        <meta charset="UTF-8" />
+        <!-- RESPONSIVE -->
+        <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+        <title>Fashonista</title>
 
-    <!-- FONT AWESOME -->
-    <script src="https://kit.fontawesome.com/6e2327f7f9.js" crossorigin="anonymous"></script>
+        <!-- FONT AWESOME -->
+        <script src="https://kit.fontawesome.com/6e2327f7f9.js"
+            crossorigin="anonymous"></script>
 
-    <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-</head>
+        <!-- CUSTOM CSS -->
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    </head>
 
-<body>
-    <!-- NAVBAR -->
-    <div class="grid-container">
-        <header class="header">
-            <nav class="navbar">
-                <div class="navbar-center">
-                    <!-- CODE FOR HAMBURGER BUTTON-->
-                    <div>
-                        <button class="sidebar-toggle" aria-label="toggle sidebar">
-                            <span class="hamburger"></span>
-                        </button>
+    <body>
+        <!-- NAVBAR -->
+        <div class="grid-container">
+            <!-- <header class="header"> -->
+                <nav class="navbar">
+                    <div class="navbar-center">
+                        <!-- CODE FOR HAMBURGER BUTTON-->
+                        <div>
+                            <button class="sidebar-toggle" aria-label="toggle
+                                sidebar">
+                                <span class="hamburger"></span>
+                            </button>
+                        </div>                       
+                        <div class="logo-title">                           
+                            <h1><img class="logo-img" src="assets/images/logo.svg"> Fashionista</h1>
+                        </div>
+                        <div class="cart-btn">
+                            <span class="nav-icon">
+                                <a href="#" style="color: black;"><i class="fas
+                                        fa-shopping-cart"></i></a>
+                            </span>
+                            <div class="cart-items">0</div>
+                        </div>
                     </div>
-                    <!-- <span class="nav-icon">
-                    <a onclick="openMenu()" style="color: black;"><i class="fas fa-bars"></i></a>
-                </span> -->
-                    <!-- <h1>TO BE ANNOUNCED</h1> -->
-                    <div class="signin">
-                        <a href="#">Sign In</a>
-                    </div>
-                    <div class="cart-btn">
-                        <span class="nav-icon">
-                            <a href="#" style="color: black;"><i class="fas fa-shopping-cart"></i></a>
-                        </span>
-                        <div class="cart-items">0</div>
-                    </div>
+                </nav>
+           <!-- </header>  -->
+            <!-- END OF NAVBAR -->
+
+            <!-- SIDE BAR -->
+            <aside class="sidebar">
+
+                <div class="sidebarclose-btn">
+                    <button class="sidebar-close-btn" onclick="closeMenu()">x</button>
                 </div>
-            </nav>
-        </header>
-        <!-- END OF NAVBAR -->
+                <h3>Shopping Categories</h3>
+                <ul class="sidebar-list">
+                    <li>
+                        <a href="#" class="sidebar-link">Accessories</a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar-link">Clothing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar-link">Handbags</a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar-link">Jewelry</a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar-link">Ponchos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar-link">Scarves</a>
+                    </li>
 
-        <!-- SIDE BAR -->
-        <aside class="sidebar">
-            
-            <div class="sidebarclose-btn">
-                <button class="sidebar-close-btn" onclick="closeMenu()">x</button>
-            </div>
-            <h3>Shopping Categories</h3>
-            <ul class="sidebar-list">
-                <li>
-                    <a href="#" class="sidebar-link">Accessories</a>
-                </li>
-                <li>
-                    <a href="#" class="sidebar-link">Clothing</a>
-                </li>
-                <li>
-                    <a href="#" class="sidebar-link">Handbags</a>
-                </li>
-                <li>
-                    <a href="#" class="sidebar-link">Jewelry</a>
-                </li>
-                <li>
-                    <a href="#" class="sidebar-link">Ponchos</a>
-                </li>
-                <li>
-                    <a href="#" class="sidebar-link">Scarves</a>
-                </li>
-
-            </ul>
-        </aside>
-        <main class="main">
-        <!-- PRODUCTS -->
-        <section class="products">
-            <div class="section-title">
-                <h2>Our Products</h2>
-            </div>
-            <div class="products-center">
-                <!-- SINGLE PRODUCT -->
-                <article class="product">
-                    <div class="img-container">
-                        <img src="assets/images/pinkpants.jpg" alt="product" class="product-img">
-                        <button class="bag-btn" data-id="1"><i class="fas fa-shopping-cart"></i>add to bag</button>
+                </ul>
+            </aside>
+            <main class="main">
+                <!-- PRODUCTS -->
+                <section class="products">
+                    <div class="section-title">
+                        <h2>Our Products</h2>
                     </div>
-                    <h3>Pink Pants</h3>
-                    <h4>$16</h4>
-                </article>
-                <!-- END OF SINGLE PRODUCT -->
-                <!-- SINGLE PRODUCT -->
-                <article class="product">
-                    <div class="img-container">
-                        <img src="assets/images/whiteshirt.jpg" alt="product" class="product-img">
-                        <button class="bag-btn" data-id="1"><i class="fas fa-shopping-cart"></i>add to bag</button>
+                    <div class="products-center">
+                        <!-- SINGLE PRODUCT -->
+                        <article class="product">
+                            <div class="img-container">
+                                <img src="assets/images/pinkpants.jpg"
+                                    alt="product" class="product-img">
+                                <button class="bag-btn" data-id="1"><i
+                                        class="fas fa-shopping-cart"></i>add to
+                                    bag</button>
+                            </div>
+                            <h3>Pink Pants</h3>
+                            <h4>$16</h4>
+                        </article>
+                        <!-- END OF SINGLE PRODUCT -->
+                        <!-- SINGLE PRODUCT -->
+                        <article class="product">
+                            <div class="img-container">
+                                <img src="assets/images/whiteshirt.jpg"
+                                    alt="product" class="product-img">
+                                <button class="bag-btn" data-id="1"><i
+                                        class="fas fa-shopping-cart"></i>add to
+                                    bag</button>
+                            </div>
+                            <h3>White Shirt</h3>
+                            <h4>$10</h4>
+                        </article>
+                        <!-- END OF SINGLE PRODUCT -->
+                        <!-- SINGLE PRODUCT -->
+                        <article class="product">
+                            <div class="img-container">
+                                <img src="assets/images/pradahandbag.jpg"
+                                    alt="product" class="product-img">
+                                <button class="bag-btn" data-id="1"><i
+                                        class="fas fa-shopping-cart"></i>add to
+                                    bag</button>
+                            </div>
+                            <h3>Prada Handbag</h3>
+                            <h4>$40</h4>
+                        </article>
+                        <!-- END OF SINGLE PRODUCT -->
+                        <!-- SINGLE PRODUCT -->
+                        <article class="product">
+                            <div class="img-container">
+                                <img src="assets/images/red handbag.jpg"
+                                    alt="product" class="product-img">
+                                <button class="bag-btn" data-id="1"><i
+                                        class="fas fa-shopping-cart"></i>add to
+                                    bag</button>
+                            </div>
+                            <h3>Red Handbag</h3>
+                            <h4>$35</h4>
+                        </article>
+                        <!-- END OF SINGLE PRODUCT -->
+                        <!-- SINGLE PRODUCT -->
+                        <article class="product">
+                            <div class="img-container">
+                                <img src="assets/images/oldwatch.jpg"
+                                    alt="product" class="product-img">
+                                <button class="bag-btn" data-id="1"><i
+                                        class="fas fa-shopping-cart"></i>add to
+                                    bag</button>
+                            </div>
+                            <h3>Old Watch</h3>
+                            <h4>$50</h4>
+                        </article>
+                        <!-- END OF SINGLE PRODUCT -->
                     </div>
-                    <h3>White Shirt</h3>
-                    <h4>$10</h4>
-                </article>
-                <!-- END OF SINGLE PRODUCT -->
-                <!-- SINGLE PRODUCT -->
-                <article class="product">
-                    <div class="img-container">
-                        <img src="assets/images/pradahandbag.jpg" alt="product" class="product-img">
-                        <button class="bag-btn" data-id="1"><i class="fas fa-shopping-cart"></i>add to bag</button>
-                    </div>
-                    <h3>Prada Handbag</h3>
-                    <h4>$40</h4>
-                </article>
-                <!-- END OF SINGLE PRODUCT -->
-                <!-- SINGLE PRODUCT -->
-                <article class="product">
-                    <div class="img-container">
-                        <img src="assets/images/red handbag.jpg" alt="product" class="product-img">
-                        <button class="bag-btn" data-id="1"><i class="fas fa-shopping-cart"></i>add to bag</button>
-                    </div>
-                    <h3>Red Handbag</h3>
-                    <h4>$35</h4>
-                </article>
-                <!-- END OF SINGLE PRODUCT -->
-                <!-- SINGLE PRODUCT -->
-                <article class="product">
-                    <div class="img-container">
-                        <img src="assets/images/oldwatch.jpg" alt="product" class="product-img">
-                        <button class="bag-btn" data-id="1"><i class="fas fa-shopping-cart"></i>add to bag</button>
-                    </div>
-                    <h3>Old Watch</h3>
-                    <h4>$50</h4>
-                </article>
-                <!-- END OF SINGLE PRODUCT -->
-            </div>
-        </section>
-        <!-- END OF PRODUCTS -->
-        
-            <!-- <ul>
-                <li>Product 1</li>
-                <li>Product 2</li>
-                <li>Product 3</li>
-                <li>Product 4</li>
-                <li>Product 5</li>
-            </ul> -->
-        </main>
-        <footer class="footer">
-            All rights reserved.
-        </footer>
-    </div>
-    <script src="assets/js/app.js"></script>
-</body>
+                </section>
+                <!-- END OF PRODUCTS -->
+            </main>
+            <footer class="footer">
+                All rights reserved.
+            </footer>
+        </div>
+        <script src="assets/js/app.js"></script>
+    </body>
 
 </html>
