@@ -1,0 +1,85 @@
+{
+    "items": [
+        {
+            "sys": { "id": "1" },
+            "fields": {
+                "title": "pink pants",
+                "price": 16.99,
+                "image": { "fields": { "file": {
+                    "url": "assets/images/pinkpants.jpg"
+                }}}
+            }
+        },
+        {
+            "sys": { "id": "2" },
+            "fields": {
+                "title": "white shirt",
+                "price": 9.99,
+                "image": { "fields": { "file": {
+                    "url": "assets/images/whiteshirt.jpg"
+                }}}
+            }
+        },
+        {
+            "sys": { "id": "3" },
+            "fields": {
+                "title": "prada handbag",
+                "price": 39.99,
+                "image": { "fields": { "file": {
+                    "url": "assets/images/pradahandbag.jpg"
+                }}}
+            }
+        },
+     
+        {
+            "sys": { "id": "4" },
+            "fields": {
+                "title": "old watch",
+                "price": 49.99,
+                "image": { "fields": { "file": {
+                    "url": "assets/images/oldwatch.jpg"
+                }}}
+            }
+        },
+        {
+            "sys": { "id": "5" },
+            "fields": {
+                "title": "pearl earrings",
+                "price": 79.99,
+                "image": { "fields": { "file": {
+                    "url": "assets/images/pearlEarrings.jpg"
+                }}}
+            }  
+        },
+        {
+            "sys": { "id": "6" },
+            "fields": {
+                "title": "gold star earrings",
+                "price": 59.99,
+                "image": { "fields": { "file": {
+                    "url": "assets/images/goldstarEarrings.jpg"
+                }}}
+            }  
+        },
+        {
+            "sys": { "id": "7" },
+            "fields": {
+                "title": "gold cross necklace",
+                "price": 99.99,
+                "image": { "fields": { "file": {
+                    "url": "assets/images/goldcrossNecklace.jpg"
+                }}}
+            }  
+        },
+        {
+            "sys": { "id": "8" },
+            "fields": {
+                "title": "cream knit poncho",
+                "price": 49.99,
+                "image": { "fields": { "file": {
+                    "url": "assets/images/creamknitPoncho.jpg"
+                }}}
+            }  
+        }
+    ]
+}

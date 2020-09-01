@@ -18,27 +18,28 @@
     <body>
         <!-- NAVBAR -->
         <div class="grid-container">
-                <nav class="navbar">
-                    <div class="navbar-center">
-                        <!-- CODE FOR HAMBURGER BUTTON-->
-                        <div>
-                            <button class="sidebar-toggle" aria-label="toggle
-                                sidebar">
-                                <span class="hamburger"></span>
-                            </button>
-                        </div>                       
-                        <div class="logo-title">                           
-                            <h1><img class="logo-img" src="assets/images/logo.svg"> Fashionista</h1>
-                        </div>
-                        <div class="cart-btn">
-                            <span class="nav-icon">
-                                <a href="#" style="color: black;"><i class="fas
-                                        fa-shopping-cart"></i></a>
-                            </span>
-                            <div class="cart-items">0</div>
-                        </div>
+            <nav class="navbar">
+                <div class="navbar-center">
+                    <!-- CODE FOR HAMBURGER BUTTON-->
+                    <div>
+                        <button class="sidebar-toggle" aria-label="toggle
+                            sidebar">
+                            <span class="hamburger"></span>
+                        </button>
                     </div>
-                </nav>
+                    <div class="logo-title">
+                        <h1><img class="logo-img" src="assets/images/logo.svg">
+                            Fashionista</h1>
+                    </div>
+                    <div class="cart-btn">
+                        <span class="nav-icon">
+                            <a href="#" style="color: black;"><i class="fas
+                                    fa-shopping-cart"></i></a>
+                        </span>
+                        <div class="cart-items">0</div>
+                    </div>
+                </div>
+            </nav>
             <!-- END OF NAVBAR -->
 
             <!-- SIDE BAR -->
@@ -85,47 +86,9 @@
                         <h2>Our Products</h2>
                     </div>
                     <div class="products-center">
-                        <!-- SINGLE PRODUCT -->
-                        <article class="product">
-                            <div class="img-container">
-                                <img src="assets/images/pinkpants.jpg"
-                                    alt="product" class="product-img">
-                                <button class="bag-btn" data-id="1"><i
-                                        class="fas fa-shopping-cart"></i>add to
-                                    bag</button>
-                            </div>
-                            <h3>Pink Pants</h3>
-                            <h4>$16.99</h4>
-                        </article>
                         <!-- END OF SINGLE PRODUCT -->
                         <!-- SINGLE PRODUCT -->
-                        <article class="product">
-                            <div class="img-container">
-                                <img src="assets/images/whiteshirt.jpg"
-                                    alt="product" class="product-img">
-                                <button class="bag-btn" data-id="1"><i
-                                        class="fas fa-shopping-cart"></i>add to
-                                    bag</button>
-                            </div>
-                            <h3>White Shirt</h3>
-                            <h4>$9.99</h4>
-                        </article>
-                        <!-- END OF SINGLE PRODUCT -->
-                        <!-- SINGLE PRODUCT -->
-                        <article class="product">
-                            <div class="img-container">
-                                <img src="assets/images/pradahandbag.jpg"
-                                    alt="product" class="product-img">
-                                <button class="bag-btn" data-id="1"><i
-                                        class="fas fa-shopping-cart"></i>add to
-                                    bag</button>
-                            </div>
-                            <h3>Prada Handbag</h3>
-                            <h4>$39.99</h4>
-                        </article>
-                        <!-- END OF SINGLE PRODUCT -->
-                        <!-- SINGLE PRODUCT -->
-                        <article class="product">
+                        <!-- <article class="product">
                             <div class="img-container">
                                 <img src="assets/images/red handbag.jpg"
                                     alt="product" class="product-img">
@@ -135,24 +98,41 @@
                             </div>
                             <h3>Red Handbag</h3>
                             <h4>$34.99</h4>
-                        </article>
+                        </article> -->
                         <!-- END OF SINGLE PRODUCT -->
-                        <!-- SINGLE PRODUCT -->
-                        <article class="product">
-                            <div class="img-container">
-                                <img src="assets/images/oldwatch.jpg"
-                                    alt="product" class="product-img">
-                                <button class="bag-btn" data-id="1"><i
-                                        class="fas fa-shopping-cart"></i>add to
-                                    bag</button>
+                <!-- CART -->
+                <div class="cart-overlay">
+                    <div class="cart">
+                        <span class="close-cart">
+                            <i class="fas fa-window-close"></i>
+                        </span>
+                        <h2>your cart</h2>
+                        <div class="cart-content">
+                            <!-- CART ITEM -->
+                            <div class="cart-item">
+                                <img src="assets/images/pinkpants.jpg" alt="pink
+                                    pants">
+                                <div>
+                                    <h4>pink pants</h4>
+                                    <h5>$16.99</h5>
+                                    <span class="remove-item">remove</span>
+                                </div>
+                                <div>
+                                    <i class="fas fa-chevron-up"></i>
+                                    <p class="item-amount">1</p>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
                             </div>
-                            <h3>Old Watch</h3>
-                            <h4>$49.99</h4>
-                        </article>
-                        <!-- END OF SINGLE PRODUCT -->
+                            <!-- END CART ITEM -->
+                        </div>
+                        <div class="cart-footer">
+                            <h3>your total : $ <span class="cart-total">0</span></h3>
+                            <button class="clear-cart banner-btn">clear cart</button> 
+                        </div>
                     </div>
-                </section>
-                <!-- END OF PRODUCTS -->
+                </div>
+
+                <!-- END OF CART -->
             </main>
             <footer class="footer">
                 All rights reserved.
