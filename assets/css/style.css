@@ -133,7 +133,130 @@ body {
 }
 /*------------ END OF NAVBAR ------------ */
 
-/* SIDE BAR */
+/*------------ HERO ------------ */
+.hero {
+    min-height: calc(100vh - 60px); /* 100% of the view height minus 60px for the height of the navbar */
+    background: url("/assets/images/freestocks-_3Q3tsJ01nc-unsplash.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 2rem;
+}
+
+.banner-title {
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3rem;
+}
+
+.banner-btn {
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    background: purple;
+    color: white;
+    border: 1px solid purple;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.banner-btn:hover {
+    background: transparent;
+    color: black;
+    font-weight: bold;
+}
+/*-------- END OF HERO ------- */
+/*---------------- PRODUCTS ------------*/
+.products {
+    padding: 4rem 0;
+}
+
+.section-title h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+}
+
+.products-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2rem;
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.bag-btn {
+    position: absolute;
+    top:70%;
+    right: 0;
+    border: none;
+    text-transform: uppercase;
+    padding: 0.5rem 0.75rem;
+    font-weight: bold;
+    transform: translate(101%);
+    transition: all 0.3s linear;
+    cursor: pointer;
+    background-color: rgb(248, 174, 243);
+}
+
+.bag-btn:hover {
+    color: purple;
+}
+
+.fa-shopping-cart {
+    margin-right: 0.5rem;
+}
+
+.img-container:hover .bag-btn {
+    transform: translateX(0);
+}
+
+.product-img {
+    display: block;
+    width: 100%;
+    max-height: 17rem;
+    transition: all 0.3s linear;
+}
+
+.img-container:hover .product-img {
+    opacity: 0.5;
+}
+
+.product h3 {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+
+.product h4 {
+    margin-top: 0.7rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    color: purple;
+}
+/*----------- END OF PRODUCTS -----------*/
+
+/*------------ SIDE BAR -----------------*/
 
 .sidebar {
     position: fixed;
@@ -190,82 +313,7 @@ body {
     transform: translateX(-30rem);
 }
 
-/*---------------- PRODUCTS ------------*/
-.products {
-    padding: 4rem 0;
-}
-
-.section-title h2 {
-    text-align: center;
-    font-size: 2,5rem;
-    margin-bottom: 5rem;
-    text-transform: capitalize;
-}
-
-.products-center {
-    width: 90vw;
-    margin: 0 auto;
-    max-width: 1170px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    /* grid-template-columns: repeat(4, 1fr); */
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 2rem;
-}
-
-.img-container {
-    position: relative;
-    overflow: hidden;
-}
-
-.bag-btn {
-    position: absolute;
-    top:70%;
-    right: 0;
-    border: none;
-    text-transform: uppercase;
-    padding: 0.5rem 0.75rem;
-    font-weight: bold;
-    transform: translate(101%);
-    cursor: pointer;
-    background-color: orange;
-}
-
-.bag-btn:hover {
-    color: white;
-}
-
-.fa-shopping-cart {
-    margin-right: 0.5rem;
-}
-
-.img-container:hover .bag-btn {
-    transform: translateX(0);
-}
-
-.product-img {
-    display: block;
-    width: 100%;
-    min-height: 12rem;
-    transition: cubic-bezier(.5);
-}
-
-.img-container:hover .product-img {
-    opacity: 0.5;
-}
-
-.product h3 {
-    text-transform: capitalize;
-    font-size: 1.1rem;
-    margin-top: 1rem;
-    text-align: center;
-}
-
-.product h4 {
-    margin-top: 0.7rem;
-    text-align: center;
-}
-/*----------- END OF PRODUCTS -----------*/
+/*------------ END OF SIDE BAR -----------------*/
 
 /*------------- MEDIA QUERIES -------------*/
 
