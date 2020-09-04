@@ -1,92 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <!-- RESPONSIVE -->
-    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
-    <title>E-commerce Website</title>
+    <head>
+        <meta charset="UTF-8" />
+        <!-- RESPONSIVE -->
+        <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+        <title>Fashonista</title>
 
-    <!-- FONT AWESOME -->
-    <script src="https://kit.fontawesome.com/6e2327f7f9.js" crossorigin="anonymous"></script>
+        <!-- FONT AWESOME -->
+        <script src="https://kit.fontawesome.com/6e2327f7f9.js"
+            crossorigin="anonymous"></script>
 
-    <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-</head>
+        <!-- CUSTOM CSS -->
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    </head>
 
-<body>
-    <!-- NAVBAR -->
-    <div class="grid-container">
-        <header class="header">
+    <body>
+        <!-- NAVBAR -->
+        <div class="grid-container">
             <nav class="navbar">
                 <div class="navbar-center">
                     <!-- CODE FOR HAMBURGER BUTTON-->
                     <div>
-                        <button class="sidebar-toggle" aria-label="toggle sidebar">
+                        <button class="sidebar-toggle" aria-label="toggle
+                            sidebar">
                             <span class="hamburger"></span>
                         </button>
                     </div>
-                    <!-- <span class="nav-icon">
-                    <a onclick="openMenu()" style="color: black;"><i class="fas fa-bars"></i></a>
-                </span> -->
-                    <!-- <h1>TO BE ANNOUNCED</h1> -->
-                    <div class="signin">
-                        <a href="#">Sign In</a>
+                    <div class="logo-title">
+                        <h1><img class="logo-img" src="assets/images/logo.svg">
+                            Fashionista</h1>
                     </div>
                     <div class="cart-btn">
                         <span class="nav-icon">
-                            <a href="#" style="color: black;"><i class="fas fa-shopping-cart"></i></a>
+                            <a href="#" style="color: black;"><i class="fas
+                                    fa-shopping-cart"></i></a>
                         </span>
                         <div class="cart-items">0</div>
                     </div>
                 </div>
             </nav>
-        </header>
-        <!-- END OF NAVBAR -->
+            <!-- END OF NAVBAR -->
 
-        <!-- SIDE BAR -->
-        <aside class="sidebar">
-            
-            <div class="sidebarclose-btn">
-                <button class="sidebar-close-btn" onclick="closeMenu()">x</button>
-            </div>
-            <h3>Shopping Categories</h3>
-            <ul class="sidebar-list">
-                <li>
-                    <a href="#" class="sidebar-link">Accessories</a>
-                </li>
-                <li>
-                    <a href="#" class="sidebar-link">Clothing</a>
-                </li>
-                <li>
-                    <a href="#" class="sidebar-link">Handbags</a>
-                </li>
-                <li>
-                    <a href="#" class="sidebar-link">Jewelry</a>
-                </li>
-                <li>
-                    <a href="#" class="sidebar-link">Ponchos</a>
-                </li>
-                <li>
-                    <a href="#" class="sidebar-link">Scarves</a>
-                </li>
+            <!-- SIDE BAR -->
+            <aside class="sidebar">
 
-            </ul>
-        </aside>
-        <main class="main">
-            <ul>
-                <li>Product 1</li>
-                <li>Product 2</li>
-                <li>Product 3</li>
-                <li>Product 4</li>
-                <li>Product 5</li>
-            </ul>
-        </main>
-        <footer class="footer">
-            All rights reserved.
-        </footer>
-    </div>
-    <script src="assets/js/app.js"></script>
-</body>
+                <div class="sidebarclose-btn">
+                    <span class="sidebar-close-btn">
+                        <i class="fas fa-window-close"></i>
+                    </span>
+                </div>
+                <div  class="sidebar-title">
+                    <h3>Shopping Categories</h3>
+                </div>
+                <ul class="sidebar-list">
+                    <li>
+                        <a href="#" class="sidebar-link">Accessories</a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar-link">Clothing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar-link">Handbags</a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar-link">Jewelry</a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar-link">Ponchos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar-link">Scarves</a>
+                    </li>
+
+                </ul>
+            </aside>
+            <main class="main">
+                <!-- HERO -->
+                <header class="hero">
+                    <div class="banner">
+                        <h1 class="banner-title">Fashonista Collection</h1>
+                        <button class="banner-btn">shop now</button>
+                    </div>
+                </header>
+
+                <!-- PRODUCTS -->
+                <section class="products">
+                    <div class="section-title">
+                        <h2>Our Products</h2>
+                    </div>
+                    <div class="products-center">
+                    </div>
+                </section>
+                <!-- CART -->
+                <div class="cart-overlay">
+                    <div class="cart">
+                        <span class="close-cart">
+                            <i class="fas fa-window-close"></i>
+                        </span>
+                        <h2>your cart</h2>
+                        <div class="cart-content">
+                            <!-- CART ITEM -->
+                            <div class="cart-item"></div>
+                            <!-- END CART ITEM -->
+                        </div>
+                        <div class="cart-footer">
+                            <h3>your total : $ <span class="cart-total">0</span></h3>
+                            <button class="clear-cart banner-btn">clear
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- END OF CART -->
+            </main>
+            <footer class="footer">
+                All rights reserved.
+            </footer>
+        </div>
+        <script src="assets/js/app.js"></script>
+    </body>
 
 </html>
