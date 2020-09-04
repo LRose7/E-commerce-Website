@@ -64,10 +64,10 @@
         {
             "sys": { "id": "7" },
             "fields": {
-                "title": "gold cross necklace",
+                "title": "gold cross bracelet",
                 "price": 99.99,
                 "image": { "fields": { "file": {
-                    "url": "assets/images/goldcrossNecklace.jpg"
+                    "url": "assets/images/goldcrossBracelet.jpg"
                 }}}
             }  
         },
