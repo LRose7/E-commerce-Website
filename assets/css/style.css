@@ -38,7 +38,7 @@ body {
     top: 0;
     height: 60px;
     width: 100%;
-    background: rgb(236, 202, 234);
+    background: rgb(252, 239, 251);
     padding: 10px 10px 10px 10px;
     display: flex;
     align-items: center;
@@ -121,12 +121,12 @@ body {
 }
 
 .logo-img {
-    width: 60px;
+    width: 50px;
     height: auto;
 }
 
 .logo-title {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Euphoria Script', cursive;
     color: purple;
     font-size: 45px;
     text-shadow: 2px 2px pink;
@@ -448,9 +448,9 @@ body {
     }
     
     .logo-title {
-        font-family: cursive;
+        font-family: 'Euphoria Script', cursive;
         color: purple;
-        font-size: 17px;
+        font-size: 35px;
         text-shadow: 2px 2px pink;
     
     }
