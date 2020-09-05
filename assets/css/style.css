@@ -242,6 +242,7 @@ body {
 
 .product h3 {
     text-transform: capitalize;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.1rem;
     margin-top: 1rem;
     letter-spacing: 0.1rem;
@@ -431,6 +432,10 @@ body {
 }
 
 /*------------ END OF SIDE BAR -----------------*/
+
+/*--------- FOOTER ------------*/
+
+/*------------ END OF FOOTER -----------------*/
 
 /*------------- MEDIA QUERIES -------------*/
 
