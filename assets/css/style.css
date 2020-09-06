@@ -24,7 +24,8 @@ body {
 
 .footer {
     grid-area: footer;
-    background-color: pink;
+    background-color: maroon;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,7 +78,7 @@ body {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: rgb(255, 0, 170);
+    background: maroon;
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -109,7 +110,7 @@ body {
    position: absolute;
    top: -8px;
    right: -8px;
-   background: rgb(235, 107, 196);
+   background: maroon;
    padding: 0 5px;
    border-radius: 30%;
    color: white;
@@ -127,7 +128,7 @@ body {
 
 .logo-title {
     font-family: 'Euphoria Script', cursive;
-    color: purple;
+    color:maroon;
     font-size: 45px;
     text-shadow: 2px 2px pink;
 }
@@ -161,9 +162,9 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     font-size: 1rem;
-    background: purple;
+    background: maroon;
     color: white;
-    border: 1px solid purple;
+    border: 1px solid maroon;
     transition: all 0.3s linear;
     cursor: pointer;
 }
@@ -214,11 +215,12 @@ body {
     transform: translate(101%);
     transition: all 0.3s linear;
     cursor: pointer;
-    background-color: rgb(248, 174, 243);
+    background-color: maroon;
+    color:white;
 }
 
 .bag-btn:hover {
-    color: purple;
+    color: white;
 }
 
 .fa-shopping-cart {
@@ -253,7 +255,7 @@ body {
     margin-top: 0.7rem;
     text-align: center;
     letter-spacing: 0.1rem;
-    color: purple;
+    color: maroon;
 }
 /*----------- END OF PRODUCTS -----------*/
 
