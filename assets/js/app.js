@@ -37,10 +37,10 @@ class Products {
 
             let products = data.items;
             products = products.map(item => {
-                const { title, price } = item.fields;
+                const { name, price } = item.fields;
                 const { id } = item.sys;
                 const image = item.fields.image.fields.file.url;
-                return { title, price, id, image }
+                return { name, price, id, image }
             })
             return products
 
@@ -69,7 +69,7 @@ class UI {
                             class="fas fa-shopping-cart"></i>add to
                         cart</button>
                 </div>
-                <h3>${product.title}</h3>
+                <h3>${product.name}</h3>
                 <h4>$${product.price}</h4>
             </article>
             <!-- END OF SINGLE PRODUCT -->

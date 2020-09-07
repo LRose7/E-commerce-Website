@@ -3,7 +3,8 @@
         {
             "sys": { "id": "1" },
             "fields": {
-                "title": "pink pants",
+                "name": "pink pants",
+                "rating": 4.5,
                 "price": 16.99,
                 "image": { "fields": { "file": {
                     "url": "assets/images/pinkpants.jpg"
@@ -13,7 +14,7 @@
         {
             "sys": { "id": "2" },
             "fields": {
-                "title": "white shirt",
+                "name": "white shirt",
                 "price": 9.99,
                 "image": { "fields": { "file": {
                     "url": "assets/images/whiteshirt.jpg"
@@ -23,7 +24,7 @@
         {
             "sys": { "id": "3" },
             "fields": {
-                "title": "prada handbag",
+                "name": "prada handbag",
                 "price": 39.99,
                 "image": { "fields": { "file": {
                     "url": "assets/images/pradahandbag.jpg"
@@ -34,7 +35,7 @@
         {
             "sys": { "id": "4" },
             "fields": {
-                "title": "old watch",
+                "name": "old watch",
                 "price": 49.99,
                 "image": { "fields": { "file": {
                     "url": "assets/images/oldwatch.jpg"
@@ -44,7 +45,7 @@
         {
             "sys": { "id": "5" },
             "fields": {
-                "title": "pearl earrings",
+                "name": "pearl earrings",
                 "price": 79.99,
                 "image": { "fields": { "file": {
                     "url": "assets/images/pearlEarrings.jpg"
@@ -54,7 +55,7 @@
         {
             "sys": { "id": "6" },
             "fields": {
-                "title": "gold star earrings",
+                "name": "gold star earrings",
                 "price": 59.99,
                 "image": { "fields": { "file": {
                     "url": "assets/images/goldstarEarrings.jpg"
@@ -64,7 +65,7 @@
         {
             "sys": { "id": "7" },
             "fields": {
-                "title": "gold cross bracelet",
+                "name": "gold cross bracelet",
                 "price": 99.99,
                 "image": { "fields": { "file": {
                     "url": "assets/images/goldcrossBracelet.jpg"
@@ -74,7 +75,7 @@
         {
             "sys": { "id": "8" },
             "fields": {
-                "title": "cream knit poncho",
+                "name": "cream knit poncho",
                 "price": 49.99,
                 "image": { "fields": { "file": {
                     "url": "assets/images/creamknitPoncho.jpg"
