@@ -70,7 +70,7 @@ body {
     color: black;
 }
 
-.hamburger {    
+.hamburger {
     display: block;
     position: relative;
 }
@@ -167,6 +167,7 @@ body {
     border: 1px solid maroon;
     transition: all 0.3s linear;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .banner-btn:hover {
@@ -453,13 +454,13 @@ body {
         width: 25px;
         height: auto;
     }
-    
+
     .logo-title {
         font-family: 'Euphoria Script', cursive;
         color: purple;
         font-size: 35px;
         text-shadow: 2px 2px pink;
-    
+
     }
 
     .navbar-center {
@@ -483,5 +484,5 @@ body {
 .hamburger::after {
     width: 1.5em;
 }
-  
+
 }
